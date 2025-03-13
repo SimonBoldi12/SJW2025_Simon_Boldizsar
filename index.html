@@ -36,14 +36,73 @@
           </nav>
     </nav>
     <main class="container mt-4">
+        <img src="./img/kiwi.png" alt="kiwi" class="kiwi_kep">
         <p>A népnyelv és a konyhaművészet általában gyümölcsnek nevezi a növények édes és húsos termését mint a szilva, alma, dió vagy narancs.
         </p>
-        <img src="./img/kiwi.png" alt="kiwi" class="kiwi_kep">
+        
         <p>Régen az erdőben élő gyümölcsfák (vadalma, vadkörte, vadcseresznye, kökény, galagonya, berkenye, som) terméseit, mogyorót, málnát, erdei szamócát vagy a tüskés szárú szedret gyűjtögették össze. Később az erdők gyümölcstermő részeit bekerítették, hogy a vadállomány kevésbé férhessen hozzá. Ezeket a bekerített erdőrészeket vadkerteknek nevezték, és a mai települések nevében is felfedezhetők. (Soltvadkert, Érsekvadkert, de Almásfüzitő, Balatonalmádi, Dunaalmás is ilyen vadkertek nevét őrzi.)
         </p>
         <p>A gyümölcsök többsége lédús, 80-90% víztartalmú, emiatt kalóriaértékük általában alacsony. Zsír- és fehérjetartalmuk elenyésző (max.1%), szénhidráttartalmuk változó, az éretlen gyümölcs főleg keményítőt, az érett gyümölcs- és szőlőcukrot (4-24%), valamint pektint és cellulózt (rostot) tartalmaznak. Vitaminokban (C-vitamin), ásványi anyagokban (K, Ca, Mg, P, Fe) gazdagok. A gyümölcsök közé tartozó olajos magvak víztartalma max.10%, fehérjetartalmuk 20% körüli, zsírtartalmuk magas (40-50%), ezért energiaértékük jelentős. A zsírban oldódó A, D, E, K, F-vitaminok az olajos magvakban vannak jelentős mennyiségben. 
         </p>
+        <h1>Tápérték- és kalóriatáblázat</h1>
+        <table class="tablazat">
+            <tr>
+                <th>Gyümölcs neve</th>
+                <th>Kalória</th>
+                <th>Zsír</th>
+                <th>Szénhidrát</th>
+                <th>Fehérje</th>
+                <th>Rost</th>
+            </tr>
+            <tr>
+                <td>Banán</td>
+                <td>89 kcal</td>
+                <td>0.33 g</td>
+                <td>22.8 g</td>
+                <td>1.09 g</td>
+                <td>2.6 g</td>
+            </tr>
+            <tr>
+                <td>Alma</td>
+                <td>52 kcal</td>
+                <td>0.17 g</td>
+                <td>13.8 g</td>
+                <td>0.26 g</td>
+                <td>1.3 g</td>
+            </tr>
+            <tr>
+                <td>Narancs</td>
+                <td>47 kcal</td>
+                <td>0.12 g</td>
+                <td>11.8 g</td>
+                <td>0.94 g</td>
+                <td>2 g</td>
+            </tr>
+        </table>
 
+        <h2>Kalkulátor</h2>
+        <div class="elemek">
+            <label for="">Gyümölcs neve:</label>
+        <select name="" id="gyumolcsok">
+            <option value="">Válasszon egy gyümölcsöt!</option>
+            <option value="banan">Banán</option>
+            <option value="alma">Alma</option>
+            <option value="narancs">Narancs</option>
+        </select>
+        <label for="">Mennyiség</label>
+        <input type="number" id="szam">
+        </div>
+        <div class="gombok">
+            <button id="szamit">Számítás</button>
+            <button id="vissza">Visszaállítás</button>
+        </div>
+        <div class="adatok">
+            <p>Zsír <br> <span id="zsir"></span></p>
+            <p>Rost <br> <span id="rost"></span></p>
+            <p>Kalória <br> <span id="kal"></span></p>
+            <p>Fehérje <br> <span id="feh"></span></p>
+            <p>Szénhidrát <br> <span id="szen"></span></p>
+        </div>
     </main>
 
 

@@ -45,3 +45,33 @@ header h1{
         display: none;
     }
 }
+
+.gombok{
+    display: flex;
+    flex-direction: row;
+}
+
+.elemek{
+    display: flex;
+    flex-direction: column;
+}
+
+.adatok{
+    display: flex;
+    flex-direction: row;
+}
+
+.adatok p{
+    margin: 25px;
+}
+
+table th{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+table td{
+    padding: 10px;
+
+}
