@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../img/banner_fruits.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(2,138,158,0.25);
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 6px black;
+    border: 10px double white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link:hover {
+    border-top: 3px double white;
+    border-bottom: 3px double white;
+}
+
+.kiwi_kep{
+    width: 250px;
+    float: right;
+    display: block;
+}
+
+@media (min-width < 770px) {
+    .kiwi-img {
+        display: none;
+    }
+}
